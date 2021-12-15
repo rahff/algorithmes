@@ -1,10 +1,29 @@
 function nbDeVoyelles(txt) {
-
-
+    const text = txt.toLowerCase()
+    const voyelles = ['a','e','i','o','u','y']
+    const splited = text.split('');
+    let count = 0;
+    for (let i = 0; i < splited.length; i++) {
+       if( voyelles.includes(splited[i])){
+           count ++
+       }
+    }
+    return count;
     
 }
 
-
+// function nbDeVoyelles(txt){
+//     const text = txt.toLowerCase()
+//     const regex = /[a,e,i,o,u,y]/;
+//     const splited = text.split('');
+//     let count = 0;
+//     for (let i = 0; i < splited.length; i++) {
+//         if(splited[i].match(regex)){
+//             count ++
+//         }
+//     }
+//     return count;
+// }
 
 console.log(nbDeVoyelles("jdhqgdqsghdakzejamazemlqksd")); // retourne 5
 console.log(nbDeVoyelles("Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, aliquam?")); // retourne 28

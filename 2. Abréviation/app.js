@@ -1,9 +1,11 @@
 function abreviation(str) {
-
-
+    const trimedText = str.trim()
+    const firstPart = trimedText.split(' ')[0];
+    const secondPart = trimedText.split(' ')[1];
+    return firstPart + ' ' + secondPart.split('')[0] + '.';
 };
 
-console.log(abreviation("John")); // John D.
+console.log(abreviation("John Doe")); // John D.
 console.log(abreviation("Romy Schneider")); // Romy S.
 console.log(abreviation("             Alfred Hitchcock                 ")); // Alfred H.
 
