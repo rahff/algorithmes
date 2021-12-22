@@ -1,9 +1,20 @@
-function puissance(a, n) {
+// function puissance(a, n) {
 
+//     let result = a;
+//     for (let i = 1; i < n; i++) {
+//         result *= a
+//     }
+//     return result;
+// }
 
-};
-
-console.log(puissance(496, 2)); //16
+    function puissance(a, n){
+        if(n === 0){
+            return 1;
+        }else{
+            return a * puissance(a, n - 1)
+        }
+    }
+console.log(puissance(4, 6)); //4096
 
 
 // -----------------  Énoncé ------------------- //

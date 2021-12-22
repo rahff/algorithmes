@@ -1,6 +1,6 @@
 function tailleDeLobj(obj){
 
-
+    return Object.keys(obj).length
 }
 
 console.log(tailleDeLobj({nom: 'Julia', taille: 168, age: 35})); //  
