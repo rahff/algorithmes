@@ -1,12 +1,12 @@
 function heureCorrecte(str){
-
-
+    const regex = /^(2[0-3]|1[0-9]):([0-5][0-9]):([0-5][0-9])$/
+    return regex.test(str);
 }
 
 
 console.log(heureCorrecte("11:35:30")); // true
-console.log(heureCorrecte("90:90:90")); // false
-console.log(heureCorrecte("qsdljqslkdjqslkjdqsklj")); // false
+console.log(heureCorrecte("23:60:00")); // false
+console.log(heureCorrecte("85:ljqslkdjqslkjdqsklj")); // false
 
 
 // -----------------  Énoncé ------------------- //

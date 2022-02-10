@@ -1,7 +1,5 @@
 function nettoyer(str){
-
-
-    
+ return str.replace(/[^A-Z]/gi, "");
 }
 
 console.log(nettoyer("&###Imme*$^^uble&$")); // Immeuble

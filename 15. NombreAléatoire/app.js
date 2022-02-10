@@ -1,5 +1,5 @@
 const nbAleatoire = (min, max) => {
-    
+  return (min + (Math.floor(Math.random() * ((max + 1) - min))))
 }
 
 console.log(nbAleatoire(1, 10)); // un nombre entre 1 et 10 inclu

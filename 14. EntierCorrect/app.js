@@ -1,6 +1,10 @@
 const entier = num => {
-    
+   if(isSafeInteger(num)){
+    return Math.round(num);
+   }
+    return "not safe integer";
 }
+const isSafeInteger = (num) => num > Number.MIN_SAFE_INTEGER && num < Number.MAX_SAFE_INTEGER;
    
 console.log(entier(5,565656)); // 5
 console.log(entier(Math.pow(2, 83))); // Entier non sûr

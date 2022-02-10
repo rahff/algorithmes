@@ -1,6 +1,6 @@
 function date() {
-
-
+    const now = new Date().toTimeString()
+    return now.slice(0,8);
 };
 
 console.log(date()); // 12:00:00 (par ex)

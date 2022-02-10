@@ -1,10 +1,8 @@
 function intervalle(min, max, nb) {
-
-
-   
+    return nb >= min && nb <= max 
 };
 
-console.log(intervalle(10, 200, 35)); // true
+console.log(intervalle(10, 200, 152)); // true
 
 
 // -----------------  Énoncé ------------------- //

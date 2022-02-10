@@ -1,6 +1,5 @@
 function premiereLettre(str){
-
-
+return str.match(/^[A-Z]/) ? true : false;
 }
 
 console.log(premiereLettre("Hello World")); // true
