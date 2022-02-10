@@ -1,10 +1,14 @@
 function triTableau(arr) {
-    const set = new Set(arr);
+    const result = getArrayWithUniqueValue(arr);
+    for(let i = 0; i < result.length; i++) { 
+        result[i] = arr.filter((v)=> v === result[i])
+    }
+    return result;
+}
+const getArrayWithUniqueValue = (array) =>{
+    const set = new Set(array);
     const arrayWithUniqueValue = []
     set.forEach((v)=> arrayWithUniqueValue.push(v))
-    for(let i = 0; i < arrayWithUniqueValue.length; i++) { 
-        arrayWithUniqueValue[i] = arr.filter((v)=> v === arrayWithUniqueValue[i])
-    }
     return arrayWithUniqueValue;
 }
 
